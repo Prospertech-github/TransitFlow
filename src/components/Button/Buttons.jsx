@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Buttons.module.css'
 
-export const Button = ({secondary, text}) => {
+export const StyledButton = ({secondary, text}) => {
   return (
 			<button
 				href="google.com"
