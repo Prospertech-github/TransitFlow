@@ -1,0 +1,51 @@
+.card{
+  margin: 10rem;
+  border: 1px solid;
+  padding: 2rem 2.5rem;
+  width: 32rem;
+  height: 40.7rem;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  justify-content: flex-end;
+  font-weight: 500;
+  z-index: 1;
+  font-family: 'Rubik', sans-serif;
+}
+
+.card p{
+  font-weight: 500;
+  color: #FFB629;
+}
+
+.card::after{
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(0deg, #091242 14.34%, rgba(60, 60, 60, 0) 43.86%);
+}
+
+.card.one{
+  background: url('../../images/photo1.png');
+}
+.card.two{
+  background: url('../../images/photo2.png');
+}
+.card.three{
+  background: url('../../images/photo3.png');
+}
+.card.four{
+  background: url('../../images/photo4.png');
+}
+.card.five{
+  background: url('../../images/photo5.png');
+}

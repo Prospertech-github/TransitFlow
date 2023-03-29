@@ -1,0 +1,35 @@
+header{
+  background: #091242;
+  color: #fff;
+  height: 12rem;
+  padding: 6rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24rem;
+}
+
+.headerText{
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.contactDetails{
+  display: flex;
+  gap: 1.7rem;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  /* padding: 0 1rem; */
+  font-family: 'Krub', sans-serif;
+  font-weight: 500;
+}
+.contactDetails img{
+  height: 100%;
+  width: auto;
+}
+.contactDetails p{
+  font-size: 1.4rem;
+}

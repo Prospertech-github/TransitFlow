@@ -1,13 +1,13 @@
 import React from 'react'
-import { Button, PlainButton } from '../components/Button/Buttons'
-import { Container } from '../components/Container'
+import {Container} from '../components/Container'
+import Header from '../components/Header/Header'
+
 
 const Home = () => {
   return (
     <>
       <Container>
-        <PlainButton text='Send Now'/>
-        <Button secondary text='Button Style'/>
+        <Header />
       </Container>
     </>
   )
