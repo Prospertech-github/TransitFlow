@@ -1,7 +1,7 @@
 .heroBanner{
   height: 100%;
   color: #fff;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   background: url('../../images/heroImage.png') no-repeat center center/cover;

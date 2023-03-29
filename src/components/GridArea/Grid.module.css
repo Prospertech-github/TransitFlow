@@ -1,0 +1,29 @@
+.gridArea{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 7rem;
+  column-gap: 7rem;
+}
+.gridArea img{
+  width: 5.2rem;
+  height: 5.2rem;
+}
+.gridItems{
+  display: flex;
+  height: 11.5rem;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+.gridItemText{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding-left: 2.5rem;
+  border-left: 2px solid #D8D8D8;
+}
+.gridItemText h5{
+  font-weight: 400;
+}
+.gridItemText p{
+  color: #666C89;
+}
