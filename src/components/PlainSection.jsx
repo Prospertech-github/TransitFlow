@@ -3,8 +3,7 @@ import styles from '../../src/index.css'
 
 const PlainSection = () => {
   return (
-    <section className='plainSection'>
-    </section>
+    <section className='plainSection' />
   )
 }
 
