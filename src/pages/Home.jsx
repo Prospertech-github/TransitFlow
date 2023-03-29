@@ -4,6 +4,7 @@ import {Container} from '../components/Container'
 import Header from '../components/Header/Header'
 import Banner from '../components/HeroSection/Banner'
 import Grid from '../components/GridArea/Grid'
+import PlainSection from '../components/PlainSection'
 
 
 
@@ -21,7 +22,9 @@ const Home = () => {
 					</div>
 
           <Grid />
-				</section>
+        </section>
+        
+        <PlainSection />
 			</Container>
 		</>
   );
