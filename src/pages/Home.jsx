@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container} from '../components/Container'
 import Header from '../components/Header/Header'
+import Banner from '../components/HeroSection/Banner'
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Container>
         <Header />
+        <Banner />
       </Container>
     </>
   )
