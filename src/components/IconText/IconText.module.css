@@ -1,0 +1,8 @@
+.iconItems{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.iconItems h5{
+  font-weight: 400;
+}
