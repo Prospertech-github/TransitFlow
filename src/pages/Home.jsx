@@ -5,6 +5,8 @@ import Header from '../components/Header/Header'
 import Banner from '../components/HeroSection/Banner'
 import Grid from '../components/GridArea/Grid'
 import PlainSection from '../components/PlainSection'
+import HeadingLabel from '../components/HeadingLabel'
+import { FeatureCard } from '../components/ImageCard/Cards'
 
 
 
@@ -17,14 +19,14 @@ const Home = () => {
 
 				<section className={styles.aboutSection}>
 					<div className={styles.headings}>
-						<h5> What We Do </h5>
+						<HeadingLabel text='What We Do' />
 						<h3> Safe & Reliable Cargo Solutions </h3>
 					</div>
-
           <Grid />
-        </section>
-        
-        <PlainSection />
+				</section>
+				
+				<PlainSection />
+        <FeatureCard />
 			</Container>
 		</>
   );

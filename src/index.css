@@ -82,7 +82,7 @@ li{
 	margin-bottom: 10rem;
 	height: 35rem;
 	background: url('/src/images/containerImage.png') no-repeat center center/cover;
-	z-index: 1;
+	z-index: -1;
 }
 .plainSection::after{
 	content: "";
@@ -91,6 +91,16 @@ li{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: -1;
+	z-index: -2;
 	background: linear-gradient(360deg, #091242 -11.11%, rgba(9, 18, 66, 0) 90.28%);
+}
+
+.headingLabel{
+  font-size: 1.4rem;
+  color: var(--heading-font-color);
+  color: #1C1F35;
+  background: rgba(232, 232, 232, 0.5);
+  width: fit-content;
+  padding: .3rem .9rem;
+  border-left: 5px solid #FFB629;
 }
