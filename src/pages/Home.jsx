@@ -1,27 +1,31 @@
-import React from 'react'
-import styles from './Home.module.css'
-import {Container} from '../components/Container'
-import Header from '../components/Header/Header'
-import Banner from '../components/HeroSection/Banner'
-import Grid from '../components/GridArea/Grid'
-import PlainSection from '../components/PlainSection'
-import HeadingLabel from '../components/HeadingLabel'
-import { FeatureCard, ImageCard, TestimonialCards } from '../components/ImageCard/Cards'
-import Records from '../components/RecordsArea/Records'
-import { StyledButton } from '../components/Button/Buttons'
-import IconText from '../components/IconText/IconText'
-import PackageIcon from '../images/icons/packageIcon.svg'
-import PricingIcon from '../images/icons/pricingIcon.svg'
-import GlobeIcon from '../images/icons/globeIcon.svg'
-import ClockIcon from '../images/icons/clockIcon2.svg'
-import ShipIcon from '../images/icons/shipIcon2.svg'
-import HeadsetIcon from '../images/icons/headSetIcon.svg'
-import Aeroplane from '../images/aeroplane2.png'
-
-
+import React from 'react';
+import styles from './Home.module.css';
+import { Container } from '../components/Container';
+import Header from '../components/Header/Header';
+import Banner from '../components/HeroSection/Banner';
+import Grid from '../components/GridArea/Grid';
+import PlainSection from '../components/PlainSection';
+import HeadingLabel from '../components/HeadingLabel';
+import {
+	FeatureCard,
+	ImageCard,
+	TeamCards,
+	TestimonialCards,
+} from '../components/ImageCard/Cards';
+import Records from '../components/RecordsArea/Records';
+import { StyledButton } from '../components/Button/Buttons';
+import IconText from '../components/IconText/IconText';
+import PackageIcon from '../images/icons/packageIcon.svg';
+import PricingIcon from '../images/icons/pricingIcon.svg';
+import GlobeIcon from '../images/icons/globeIcon.svg';
+import ClockIcon from '../images/icons/clockIcon2.svg';
+import ShipIcon from '../images/icons/shipIcon2.svg';
+import HeadsetIcon from '../images/icons/headSetIcon.svg';
+import Aeroplane from '../images/aeroplane2.png';
+import FlightIcon from '../images/icons/flightIcon2.svg';
 
 const Home = () => {
-  return (
+	return (
 		<>
 			<Container>
 				<Header />
@@ -94,8 +98,15 @@ const Home = () => {
 				<section className={styles.opportunitySection}>
 					<div className={styles.firstDiv}>
 						<img src={Aeroplane} alt="" />
+
+						<div className={styles.overflowDiv}>
+							<div className={styles.imgDiv}>
+								<img src={FlightIcon} alt="Flight Icon" />
+							</div>
+							<p> Moving your products across borders </p>
+						</div>
 					</div>
-					<div>
+					<div className={styles.secondDiv}>
 						<HeadingLabel text="Why Choose" />
 						<h3> We create opportunity to reach potential </h3>
 						<p>
@@ -133,9 +144,42 @@ const Home = () => {
 						</div>
 					</div>
 				</section>
+
+				<section className={styles.teamArea}>
+					<HeadingLabel text="The Transporters" />
+					<h3> Meet Expert Team </h3>
+
+					<div className={styles.teamCards}>
+						<TeamCards
+							cardNumber="one"
+							teammateName="Jessca Arrow"
+							twitter
+							facebook
+							instagram
+						/>
+						<TeamCards
+							cardNumber="two"
+							teammateName="Kathleen Smith"
+							linkedin
+							twitter
+							facebook
+							instagram
+						/>
+						<TeamCards
+							cardNumber="three"
+							teammateName="Rebecca Taylor"
+							facebook
+							instagram
+						/>
+					</div>
+				</section>
+
+				<section className={styles.formSection}>
+					
+				</section>
 			</Container>
 		</>
-  );
-}
+	);
+};
 
-export default Home
+export default Home;

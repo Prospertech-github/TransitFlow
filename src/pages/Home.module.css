@@ -4,6 +4,7 @@
   display: flex;
   gap: 7rem;
 }
+
 .headings{
   display: flex;
   flex-direction: column;
@@ -24,6 +25,7 @@
   align-items: center;
   gap: 1.8rem; */
 }
+
 .cardSection::after{
   content: "";
   position: absolute;
@@ -33,6 +35,7 @@
   height: 50%;
   background: linear-gradient(95deg, #FFB629 -1.19%, #FFDA56 57.78%, #FFD7A6 115.08%);
 }
+
 .cardArea{
   display: flex;
   justify-content: center;
@@ -40,6 +43,7 @@
   gap: 1.8rem;
   margin-top: 3.5rem;
 }
+
 .cardSection h3{
   color: #1C1F35;
   line-height: 1.2;
@@ -60,6 +64,7 @@
   margin: 0 auto;
   padding: 10rem 0;
 }
+
 .userTestimonials h3{
   color: var(--heading-font-color);
   color: #1C1F35;
@@ -70,7 +75,113 @@
   display: flex;
 }
 
+.opportunitySection{
+  display: flex;
+}
+
+.firstDiv,
+.secondDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.firstDiv{
+  background: #091242;
+  flex: 1;
+  padding: 8.2rem 8rem ;
+  position: relative;
+}
+.overflowDiv{
+  width: 30rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 2.1rem;
+  background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+  position: absolute;
+  top: 67%;
+  left: 35%;
+  z-index: 20;
+}
+
+.overflowDiv p{
+  color: #1C1F35;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+}
+
+.imgDiv{
+  width: fit-content;
+}
+
+.imgDiv img{
+  width: 100%;
+}
+.firstDiv img{
+  width: 125%;
+  height: 90%;
+  z-index: 10;
+  position: relative;
+}
+
+.firstDiv img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 20rem;
+  background: #091242;
+  z-index: 20;
+}
+
+.secondDiv{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12rem 9rem;
+  background: #F4F4F4;
+}
+
+.secondDiv h3{
+  width: 85%;
+  color: #1C1F35;
+  margin-top: 1.5rem;
+}
+
+.secondDiv p{
+  color: #666C89;
+  line-height: 1.5;
+  width: 95%;
+  margin-top: 1.8rem;
+}
+
 .iconGridArea{
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.teamArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 9rem 0;
+}
+
+.teamArea h3{
+  margin-top: 2rem;
+  color: #1C1F35;
+}
+
+.teamCards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 4rem;
 }

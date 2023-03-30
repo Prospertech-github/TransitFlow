@@ -9,6 +9,10 @@ import User2 from '../../images/user2.png';
 import QuoteIcon from '../../images/icons/quoteIcon.svg';
 import StarIcon from '../../images/icons/starIcon.svg';
 import IconText from '../IconText/IconText';
+import LinkedinIcon from '../../images/icons/linkedInDarkIcon.svg';
+import FacebookIcon from '../../images/icons/facebookDarkIcon.svg';
+import TwitterIcon from '../../images/icons/twitterDarkIcon.svg';
+import InstagramIcon from '../../images/icons/instagramDarkIcon.svg';
 
 export const ImageCard = ({ cardNumber, heading, text }) => {
 	let cardClass;
@@ -123,6 +127,43 @@ export const TestimonialCards = ({ userName, userProfile, second }) => {
 				<img src={StarIcon} alt="Star Icon" />
 				<img src={StarIcon} alt="Star Icon" />
 				<img src={StarIcon} alt="Star Icon" />
+			</div>
+		</div>
+	);
+};
+
+export const TeamCards = ({
+	cardNumber,
+	teammateName,
+	facebook,
+	linkedin,
+	twitter,
+	instagram,
+}) => {
+	let cardClass;
+	switch (cardNumber) {
+		case 'one':
+			cardClass = 'one';
+			break;
+		case 'two':
+			cardClass = 'two';
+			break;
+		case 'three':
+			cardClass = 'three';
+			break;
+		default:
+			break;
+	}
+	return (
+		<div className={`${styles.teamCard} ${styles[cardClass]}`}>
+			<h5> {teammateName} </h5>
+			<p> Designer </p>
+
+			<div className={styles.overflowDiv}>
+				{linkedin && <img src={LinkedinIcon} alt="" />}
+				{twitter && <img src={TwitterIcon} alt="" />}
+				{facebook && <img src={FacebookIcon} alt="" />}
+				{instagram && <img src={InstagramIcon} alt="" />}
 			</div>
 		</div>
 	);

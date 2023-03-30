@@ -171,3 +171,61 @@
 .ratingArea{
   margin-top: 3.2rem;
 }
+
+.teamCard{
+  width: 32rem;
+  height: 48rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  padding-left: 3.4rem;
+  padding-bottom: 2rem;
+}
+.teamCard::after{
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: none;
+  height: 23%;
+  overflow: hidden;
+  z-index: -1;
+  background: #1C1F35;
+}
+.teamCard.one{
+  background: url('../../images/teamAvatar1.png') no-repeat center center/cover;
+}
+.teamCard.two{
+  background: url('../../images/teamAvatar2.png') no-repeat center center/cover;
+}
+.teamCard.three{
+  background: url('../../images/teamAvatar3.png') no-repeat center center/cover;
+}
+.teamCard h5{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+}
+.teamCard p{
+  margin-top: .2rem;
+  font-weight: 500;
+  font-family: 'Krub', sans-serif;
+  position: relative;
+}
+
+.overflowDiv{
+  position: absolute;
+  bottom: 18%;
+  right: 0;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  height: 4.5rem;
+  background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+}
