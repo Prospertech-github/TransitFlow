@@ -1,0 +1,26 @@
+.recordsArea{
+  margin-top: 30rem;
+  margin-bottom: 9.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figures{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 2.5rem 6rem;
+  border-top: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+}
+.first{
+  border-right: 1px solid #D4D4D4;
+}
+.figures h1{
+  color: #1C1F35; 
+}
+.box{
+  width: 1.7rem;
+  height: 1.7rem;
+  background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
+}

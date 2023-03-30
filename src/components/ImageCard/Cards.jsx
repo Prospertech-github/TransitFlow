@@ -4,6 +4,11 @@ import styles from './Cards.module.css';
 import MoneyIcon from '../../images/icons/moneyIcon.svg'
 import PackageIcon from '../../images/icons/packageIcon.svg'
 import Aeroplane from '../../images/aeroplane.png'
+import User1 from '../../images/user1.png' 
+import User2 from '../../images/user2.png'
+import QuoteIcon from '../../images/icons/quoteIcon.svg'
+import StarIcon from '../../images/icons/starIcon.svg'
+
 
 export const ImageCard = ({ cardNumber, heading, text }) => {
 	let cardClass;
@@ -73,4 +78,38 @@ export const FeatureCard = () => {
 		</div>
 	);
 };
+
+export const TestimonialCards = () => {
+	return (
+		<div className={styles.testimonial}>
+			<div className={styles.topDiv}>
+				<img src={User1} alt="Smith Kathleen" />
+				<div className={styles.textContainer}>
+					<h5>Kathleen Smith</h5>
+					<p> Fuel Company </p>
+				</div>
+				<img src={QuoteIcon} alt="Quote Icon" />
+			</div>
+
+			<div className={styles.textDiv}>
+				<p>
+					Leverage agile frameworks to provide a robust synopsis for
+					strategy foster collaborative thinking to further the
+					overall value proposition. Organically grow the holistic
+					world view of disruptive innovation via workplace diversity
+					and empowerment.
+				</p>
+			</div>
+
+			<div className={styles.ratingArea}>
+				<img src={StarIcon} alt="Star Icon" />
+				<img src={StarIcon} alt="Star Icon" />
+				<img src={StarIcon} alt="Star Icon" />
+				<img src={StarIcon} alt="Star Icon" />
+				<img src={StarIcon} alt="Star Icon" />
+			</div>
+		</div>
+	);
+}
+
 
