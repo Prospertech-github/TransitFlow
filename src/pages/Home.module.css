@@ -54,3 +54,18 @@
   justify-content: center;
   text-align: center;
 }
+
+.userTestimonials{
+  width: 100rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.userTestimonials h3{
+  color: var(--heading-font-color);
+  color: #1C1F35;
+  margin-top: 1.6rem;
+}
+
+.testimonial{
+  display: flex;
+}

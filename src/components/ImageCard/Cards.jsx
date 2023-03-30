@@ -79,19 +79,30 @@ export const FeatureCard = () => {
 	);
 };
 
-export const TestimonialCards = () => {
+export const TestimonialCards = ({userName, userProfile, second}) => {
 	return (
-		<div className={styles.testimonial}>
+		<div
+			className={`${styles.testimonial} ${
+				second ? styles.secondUser : ''
+			}`}
+		>
 			<div className={styles.topDiv}>
-				<img src={User1} alt="Smith Kathleen" />
-				<div className={styles.textContainer}>
-					<h5>Kathleen Smith</h5>
-					<p> Fuel Company </p>
+				<div className={`${styles.userDetails} ${
+				second ? styles.secondUser : ''
+			}`}>
+					<img src={`${second ? User2 : User1}`} alt="Smith Kathleen" />
+					<div className={styles.textContainer}>
+						<h5> {userName} </h5>
+						<p> {userProfile} </p>
+					</div>
 				</div>
+
 				<img src={QuoteIcon} alt="Quote Icon" />
 			</div>
 
-			<div className={styles.textDiv}>
+			<div className={`${styles.textDiv} ${
+				second ? styles.secondUser : ''
+			}`}>
 				<p>
 					Leverage agile frameworks to provide a robust synopsis for
 					strategy foster collaborative thinking to further the

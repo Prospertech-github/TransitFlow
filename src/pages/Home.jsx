@@ -6,7 +6,7 @@ import Banner from '../components/HeroSection/Banner'
 import Grid from '../components/GridArea/Grid'
 import PlainSection from '../components/PlainSection'
 import HeadingLabel from '../components/HeadingLabel'
-import { FeatureCard, ImageCard } from '../components/ImageCard/Cards'
+import { FeatureCard, ImageCard, TestimonialCards } from '../components/ImageCard/Cards'
 import Records from '../components/RecordsArea/Records'
 import { StyledButton } from '../components/Button/Buttons'
 
@@ -64,6 +64,16 @@ const Home = () => {
 					
 					<div className={styles.buttonArea}>
 						<StyledButton secondary text='More Work'/>
+					</div>
+				</section>
+
+				<section className={styles.userTestimonials}>
+					<HeadingLabel text="Testimonial" />
+					<h3> What Our Customer Say </h3>
+
+					<div className={styles.testimonial}>
+						<TestimonialCards userName='Kathleen Smith' userProfile='Fuel Company'/>
+						<TestimonialCards userName='John Martin' userProfile='Restoration Company' second/>
 					</div>
 				</section>
 			</Container>
