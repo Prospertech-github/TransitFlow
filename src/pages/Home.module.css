@@ -20,10 +20,6 @@
   padding: 0 2rem;
   padding-bottom: 10rem;
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.8rem; */
 }
 
 .cardSection::after{
