@@ -14,7 +14,7 @@ import {
 } from '../components/ImageCard/Cards';
 import Records from '../components/RecordsArea/Records';
 import { StyledButton } from '../components/Button/Buttons';
-import IconText from '../components/IconText/IconText';
+import { IconText, ScheduleIconText } from '../components/IconText/IconText';
 import PackageIcon from '../images/icons/packageIcon.svg';
 import PricingIcon from '../images/icons/pricingIcon.svg';
 import GlobeIcon from '../images/icons/globeIcon.svg';
@@ -23,6 +23,7 @@ import ShipIcon from '../images/icons/shipIcon2.svg';
 import HeadsetIcon from '../images/icons/headSetIcon.svg';
 import Aeroplane from '../images/aeroplane2.png';
 import FlightIcon from '../images/icons/flightIcon2.svg';
+import Form from '../components/Form/Form';
 
 const Home = () => {
 	return (
@@ -175,7 +176,23 @@ const Home = () => {
 				</section>
 
 				<section className={styles.formSection}>
-					
+					<div className={styles.formContainer}>
+						<div className={styles.textContainer}>
+							<HeadingLabel text="Contact" secondary/>
+							<h3> Get in touch with us </h3>
+							<p>
+								Leverage agile frameworks to provide a robust
+								synopsis for strategy foster collaborative
+								thinking to further the overall value.
+							</p>
+
+							<ScheduleIconText column/>
+						</div>
+
+						<div className={styles.formDiv}>
+							<Form />
+						</div>
+					</div>
 				</section>
 			</Container>
 		</>

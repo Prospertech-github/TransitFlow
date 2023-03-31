@@ -8,7 +8,7 @@ import User1 from '../../images/user1.png';
 import User2 from '../../images/user2.png';
 import QuoteIcon from '../../images/icons/quoteIcon.svg';
 import StarIcon from '../../images/icons/starIcon.svg';
-import IconText from '../IconText/IconText';
+import { IconText } from '../IconText/IconText';
 import LinkedinIcon from '../../images/icons/linkedInDarkIcon.svg';
 import FacebookIcon from '../../images/icons/facebookDarkIcon.svg';
 import TwitterIcon from '../../images/icons/twitterDarkIcon.svg';

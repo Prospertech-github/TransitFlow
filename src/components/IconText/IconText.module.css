@@ -6,3 +6,47 @@
 .iconItems h5{
   font-weight: 400;
 }
+
+.headerText{
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.headerText.column{
+  flex-direction: column;
+  color: #fff;
+  height: fit-content;
+  gap: 1rem;
+}
+.headerText.column p{
+  width: 100%;
+}
+.headerText.column .contactDetails{
+  gap: 1.4rem;
+  width: 70%;
+  height: 100%;
+}
+
+.headerText.column .contactDetails p{
+  height: 100%;
+}
+
+
+.contactDetails{
+  display: flex;
+  gap: 1.7rem;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 50px;
+  font-family: 'Krub', sans-serif;
+  font-weight: 500;
+}
+.contactDetails img{
+  height: 100%;
+  width: auto;
+}
+.contactDetails p{
+  font-size: 1.4rem;
+}
