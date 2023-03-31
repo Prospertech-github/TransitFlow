@@ -32,7 +32,7 @@ This folder is home to all the different pages of the TransitFlow web app. It wa
 ## CODE BASE
 The TransitFlow web app was built using React and CSS modules for styling. The choice of the technology being used is because of the relative easy learning-curve and familiarity as compared to other frameworks or libraries.
 ### Deploy
-The web app was deployed to `Netlify` and is hosted on
+The web app was deployed to `Netlify` and its live link hosted on `https://transitflow-app.netlify.app`
 
 **Note: Developers must always and can only contribute to the code base using the same technology**
 
