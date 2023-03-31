@@ -175,9 +175,14 @@
 }
 
 .teamCards{
+  width: 100rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
   margin-top: 4rem;
+}
+
+.formSection{
+  background: #091242;
 }
