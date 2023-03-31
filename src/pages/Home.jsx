@@ -225,6 +225,10 @@ const Home = () => {
 						date='25'
 						heading="Five things you should have ready for your broker"
 					/>
+					
+					<div className={styles.btnDiv}>
+						<StyledButton text='More Blog' secondary />
+					</div>
 				</section>
 			</Container>
 		</>
