@@ -24,6 +24,8 @@ import HeadsetIcon from '../images/icons/headSetIcon.svg';
 import Aeroplane from '../images/aeroplane2.png';
 import FlightIcon from '../images/icons/flightIcon2.svg';
 import Form from '../components/Form/Form';
+import ImageStack from '../components/ImageStack/ImageStack';
+
 
 const Home = () => {
 	return (
@@ -192,6 +194,10 @@ const Home = () => {
 						<div className={styles.formDiv}>
 							<Form />
 						</div>
+					</div>
+
+					<div className={styles.imageStack}>
+						<ImageStack />
 					</div>
 				</section>
 			</Container>

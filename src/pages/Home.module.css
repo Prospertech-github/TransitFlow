@@ -210,3 +210,11 @@
   width: 60%;
 }
 
+.imageStack{
+  width: 100rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  height: 23rem;
+}
+
