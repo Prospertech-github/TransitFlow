@@ -25,6 +25,10 @@ import Aeroplane from '../images/aeroplane2.png';
 import FlightIcon from '../images/icons/flightIcon2.svg';
 import Form from '../components/Form/Form';
 import ImageStack from '../components/ImageStack/ImageStack';
+import BlogPost from '../components/BlogPost/BlogPost';
+import BlogImage1 from '../images/blogImage1.png';
+import BlogImage2 from '../images/blogImage2.png';
+import BlogImage3 from '../images/blogImage3.png';
 
 
 const Home = () => {
@@ -180,7 +184,7 @@ const Home = () => {
 				<section className={styles.formSection}>
 					<div className={styles.formContainer}>
 						<div className={styles.textContainer}>
-							<HeadingLabel text="Contact" secondary/>
+							<HeadingLabel text="Contact" secondary />
 							<h3> Get in touch with us </h3>
 							<p>
 								Leverage agile frameworks to provide a robust
@@ -188,7 +192,7 @@ const Home = () => {
 								thinking to further the overall value.
 							</p>
 
-							<ScheduleIconText column/>
+							<ScheduleIconText column />
 						</div>
 
 						<div className={styles.formDiv}>
@@ -199,6 +203,28 @@ const Home = () => {
 					<div className={styles.imageStack}>
 						<ImageStack />
 					</div>
+				</section>
+
+				<section className={styles.blogSection}>
+					<HeadingLabel text="Our Blog" />
+					<h3> Our Latest News </h3>
+
+					<BlogPost
+						first
+						date='08'
+						heading="Inland freight a worthy solution for your business"
+					/>
+					<BlogPost
+						second
+						date='12'
+						heading="How technology can help redraw the supply chain map"
+						diff
+					/>
+					<BlogPost
+						third
+						date='25'
+						heading="Five things you should have ready for your broker"
+					/>
 				</section>
 			</Container>
 		</>
