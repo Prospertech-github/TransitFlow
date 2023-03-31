@@ -1,9 +1,8 @@
 import React from 'react'
-import styles from '../../src/index.css'
 
-const PlainSection = () => {
+const PlainSection = ({ secondary }) => {
   return (
-    <section className='plainSection' />
+    <section className={`plainSection ${secondary && "secondary"}`} />
   )
 }
 

@@ -230,6 +230,8 @@ const Home = () => {
 						<StyledButton text='More Blog' secondary />
 					</div>
 				</section>
+
+				<PlainSection secondary/>
 			</Container>
 		</>
 	);
