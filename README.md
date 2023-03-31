@@ -38,7 +38,7 @@ The web app was deployed to `Netlify` and its live link hosted on `https://trans
 
 ## DIFFICULTY
 Though the task of developing the TransitFlow web app was fun, the challenges encounterd during the course of this project are nerve-breaking. Some of the challenges encountered include
-#### Time
+`Time`
 
 `Inconsitent design by the UI designers (every section is unique and then reduces the concept of reusability)`
 
